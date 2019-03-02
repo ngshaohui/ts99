@@ -1,0 +1,19 @@
+{
+  "name": "ts99",
+  "version": "1.0.0",
+  "description": "ninety-nine problems in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "author": "Shao Hui",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  }
+}
