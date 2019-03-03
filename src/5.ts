@@ -1,14 +1,22 @@
-const myReverse1 = (xs: any[]): any[] => {
-  return xs.reverse()
-}
-
 // reduce args (acc, cur, idx, src)
-const myReverse2 = (xs: any[]): any[] => {
+const myReverse1 = (xs: any[]): any[] => {
   return xs.reduce((acc: any[], cur: any) => {
-    acc.push(cur) // THIS SHOULD BE UNSHIFT??????????
+    acc.unshift(cur) // add to front
     return acc
   }, [])
 }
+
+const myReverse2 = (xs: any[]): any[] => {
+  return xs.reduceRight((acc: any[], cur: any) => {
+    acc.push(cur) // add to back
+    return acc
+  }, [])
+}
+
+// WARNING mutates the list
+// const myReverse0 = (xs: any[]): any[] => {
+//   return xs.reverse() // .reverse() modifies the list
+// }
 
 export const array_of_functions = [
   myReverse1,
