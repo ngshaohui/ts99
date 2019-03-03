@@ -1,8 +1,8 @@
 # 99 problems in typescript
 
-referencing https://wiki.haskell.org/99_questions
+referencing https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
 
-**5/99 complete**
+**10/99 complete**
 
 ### How to set up
 
