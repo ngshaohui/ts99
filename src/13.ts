@@ -1,6 +1,5 @@
 const encodeDirect1 = (ls: any[]): any[] => {
   const xs = ls.reduce((acc: any[], cur: any, idx: number, arr: any[]) => {
-    console.log(idx)
     const elem = acc[0]
     if (elem === cur) {
       acc[1] = acc[1] + 1 // increase freq
