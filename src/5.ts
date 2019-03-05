@@ -14,11 +14,14 @@ const myReverse2 = (xs: any[]): any[] => {
 }
 
 // WARNING mutates the list
-// const myReverse0 = (xs: any[]): any[] => {
-//   return xs.reverse() // .reverse() modifies the list
-// }
+const myReverse3 = (xs: any[]): any[] => {
+  const ys = [...xs]
+  ys.reverse() // .reverse() modifies the list
+  return ys
+}
 
 export const array_of_functions = [
   myReverse1,
-  myReverse2
+  myReverse2,
+  myReverse3
 ]
