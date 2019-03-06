@@ -2,7 +2,7 @@
 
 referencing https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
 
-**10/99 complete**
+**25/99 complete**
 
 ### How to set up
 
