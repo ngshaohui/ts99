@@ -354,6 +354,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-require@npm:^1.1.0":
+  version: 1.1.1
+  resolution: "create-require@npm:1.1.1"
+  checksum: babd307893abfb26d77ae11cb9d6b6cfa6d18c9cee435cf70b5a3fb44aa8d90c9ec26ea89cbb16e0a94b8d34f5fcaee164b90ed526cdd3158955673ab9652d01
+  languageName: node
+  linkType: hard
+
 "dashdash@npm:^1.12.0":
   version: 1.14.1
   resolution: "dashdash@npm:1.14.1"
@@ -1461,13 +1468,13 @@ fsevents@~2.1.1:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:^0.5.6":
-  version: 0.5.16
-  resolution: "source-map-support@npm:0.5.16"
+"source-map-support@npm:^0.5.17":
+  version: 0.5.19
+  resolution: "source-map-support@npm:0.5.19"
   dependencies:
     buffer-from: ^1.0.0
     source-map: ^0.6.0
-  checksum: cf44ce8b694a32bc63f686826bc7e254e5025d4c7eeb4f0c76f61c828cd81067f0df88c0414c50db728dc3d207fb032d7c50c3b419286330332ddbdd4d2689d7
+  checksum: 59d4efaae97755155b078413ecba63517e3ef054cc7ab767bbd30e6f3054be2ae8e8f5cce7eef53b7eb93e98fe27a58dd8f5e7abfb13144ba420ddaf5267bbb2
   languageName: node
   linkType: hard
 
@@ -1674,14 +1681,15 @@ fsevents@~2.1.1:
   languageName: node
   linkType: hard
 
-"ts-node@npm:8.8.2":
-  version: 8.8.2
-  resolution: "ts-node@npm:8.8.2"
+"ts-node@npm:9.1.1":
+  version: 9.1.1
+  resolution: "ts-node@npm:9.1.1"
   dependencies:
     arg: ^4.1.0
+    create-require: ^1.1.0
     diff: ^4.0.1
     make-error: ^1.1.1
-    source-map-support: ^0.5.6
+    source-map-support: ^0.5.17
     yn: 3.1.1
   peerDependencies:
     typescript: ">=2.7"
@@ -1690,7 +1698,7 @@ fsevents@~2.1.1:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: fbbb4a795bd3ceca5b77fa680bae16cf313a35f0de80db032f0cd6f39aa4deb26bab43b0a62f00eb6a3e78fdd49951e220fc14a33d7fb590f812157168eb744f
+  checksum: a90db4a342872cd0e7a80babdfcb15d2f7c06e700d735003098f7cc79db575c3380580c58a19ae0d0eaab553af083651d4237060c92170e6f8ac4e64693113ea
   languageName: node
   linkType: hard
 
@@ -1702,8 +1710,8 @@ fsevents@~2.1.1:
     "@types/mocha": 7.0.2
     chai: 4.2.0
     mocha: 7.1.1
-    ts-node: 8.8.2
-    typescript: 3.8.3
+    ts-node: 9.1.1
+    typescript: 4.1.5
   languageName: unknown
   linkType: soft
 
@@ -1730,23 +1738,23 @@ fsevents@~2.1.1:
   languageName: node
   linkType: hard
 
-typescript@3.8.3:
-  version: 3.8.3
-  resolution: "typescript@npm:3.8.3"
+typescript@4.1.5:
+  version: 4.1.5
+  resolution: "typescript@npm:4.1.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 519b11576247fe3570d89a2aa757d8f666aafc0cb9465a6cdd4df09c1dc6bf7285f0c6008d2ac7a55ea26457e767aaab819f58439d80af2cce1d9805b2be1034
+  checksum: 29157c84426ac94ce97aac836264f303a26bd9fb30865650229e3406a36ca2e89735ef4b8878075ba1b95fa4d3ff9810057b64888700c28e20b4034a6db4da83
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@3.8.3#builtin<compat/typescript>":
-  version: 3.8.3
-  resolution: "typescript@patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=5bf698"
+"typescript@patch:typescript@4.1.5#builtin<compat/typescript>":
+  version: 4.1.5
+  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=5bf698"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: dcadfa6d7c90af4ac23181cccda22bdc7270f23a2c8773ab0b6047e2b9b86bcd885da5c5acc020addc1a0df042940ab8e9bbfb33aedcf884bea554fe60fccd32
+  checksum: 96decae79720b1976662fcc4398f567c852b89ba0bd20e434b63d21a368b4054b19ab0e1bf5c8700fb4eb046dbbfc251074e670721476f4c442135e9bad2497f
   languageName: node
   linkType: hard
 
