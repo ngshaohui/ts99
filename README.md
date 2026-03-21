@@ -10,7 +10,7 @@ referencing https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
 
 2. Install dependencies
 
-`npm install chai mocha ts-node typescript @types/chai @types/mocha --save-dev`
+`npm install`
 
 ### How to run
 
