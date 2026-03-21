@@ -1,6 +1,5 @@
 import { array_of_functions } from './24'
-import { expect } from 'chai'
-import 'mocha'
+import { describe, it, expect } from 'vitest'
 
 const list_1 = [4, 2, 5, 2, 4, 1, 8, 11, 2]
 // const list_2 = [4, 2, 5, 2, 4]
@@ -25,7 +24,7 @@ describe('diffSelect 1, 49', () => {
       const res = f(6, 49);
       let full_range = range1(1, 49)
       for (let e of res) {
-        expect(full_range).to.include(e)
+        expect(full_range).toContain(e)
       }
     }
   })
@@ -39,7 +38,7 @@ describe('diffSelect 10, 100', () => {
       const res = f(10, 100);
       let full_range = range1(1, 100)
       for (let e of res) {
-        expect(full_range).to.include(e)
+        expect(full_range).toContain(e)
       }
     }
   })

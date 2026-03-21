@@ -1,6 +1,5 @@
 import { array_of_functions } from './18'
-import { expect } from 'chai'
-import 'mocha'
+import { describe, it, expect } from 'vitest'
 
 const list_1 = [4, 2, 5, 2, 4, 1, 8, 11, 2]
 // const list_2 = [4, 2, 5, 2, 4]
@@ -14,7 +13,7 @@ describe('slice list_1', () => {
   it('should return [5, 2, 4, 1]', () => {
     for (let f of array_of_functions) {
       let res = f(list_1, 3, 6);
-      expect(res).to.deep.equal([5, 2, 4, 1])
+      expect(res).toEqual([5, 2, 4, 1])
     }
   })
 
@@ -25,7 +24,7 @@ describe('slice list_5', () => {
   it('should return [4, 4, 4]', () => {
     for (let f of array_of_functions) {
       let res = f(list_5, 6, 8);
-      expect(res).to.deep.equal([4, 4, 4])
+      expect(res).toEqual([4, 4, 4])
     }
   })
 

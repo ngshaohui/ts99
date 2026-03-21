@@ -1,6 +1,5 @@
 import { array_of_functions } from './25'
-import { expect } from 'chai'
-import 'mocha'
+import { describe, it, expect } from 'vitest'
 
 const list_1 = [4, 2, 5, 2, 4, 1, 8, 11, 2]
 // const list_2 = [4, 2, 5, 2, 4]
@@ -17,7 +16,7 @@ describe('rndPermu list_1', () => {
       res.sort()
       const l1_sorted = [...list_1]
       l1_sorted.sort()
-      expect(res).to.deep.equals(l1_sorted)
+      expect(res).toEqual(l1_sorted)
     }
   })
 
@@ -31,7 +30,7 @@ describe('rndPermu list_5', () => {
       res.sort()
       const l5_sorted = [...list_5]
       l5_sorted.sort()
-      expect(res).to.deep.equals(l5_sorted)
+      expect(res).toEqual(l5_sorted)
     }
   })
 

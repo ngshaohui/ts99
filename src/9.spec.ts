@@ -1,6 +1,5 @@
 import { array_of_functions } from './9'
-import { expect } from 'chai'
-import 'mocha'
+import { describe, it, expect } from 'vitest'
 
 const list_1 = [4, 2, 5, 2, 4, 1, 8, 11, 2]
 // const list_2 = [4, 2, 5, 2, 4]
@@ -13,7 +12,7 @@ describe('pack list_1', () => {
   it('should return [[4], [2], [5], [2], [4], [1], [8], [11], [2]]', () => {
     for (let f of array_of_functions) {
       let res = f(list_1);
-      expect(res).to.deep.equal([[4], [2], [5], [2], [4], [1], [8], [11], [2]])
+      expect(res).toEqual([[4], [2], [5], [2], [4], [1], [8], [11], [2]])
     }
   })
 
@@ -24,7 +23,7 @@ describe('pack list_5', () => {
   it('should return [[1, 1, 1], [2], [3], [4, 4, 4], [3], [2, 2], [1], [2]]', () => {
     for (let f of array_of_functions) {
       let res = f(list_5);
-      expect(res).to.deep.equal([[1, 1, 1], [2], [3], [4, 4, 4], [3], [2, 2], [1], [2]])
+      expect(res).toEqual([[1, 1, 1], [2], [3], [4, 4, 4], [3], [2, 2], [1], [2]])
     }
   })
 

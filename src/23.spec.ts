@@ -1,6 +1,5 @@
 import { array_of_functions } from './23'
-import { expect } from 'chai'
-import 'mocha'
+import { describe, it, expect } from 'vitest'
 
 const list_1 = [4, 2, 5, 2, 4, 1, 8, 11, 2]
 // const list_2 = [4, 2, 5, 2, 4]
@@ -15,7 +14,7 @@ describe('rndSelect list_1', () => {
     for (let f of array_of_functions) {
       const res = f(list_1, 4);
       for (let e of res) {
-        expect(list_1).to.include(e)
+        expect(list_1).toContain(e)
       }
     }
   })
@@ -28,7 +27,7 @@ describe('rndSelect list_5', () => {
     for (let f of array_of_functions) {
       const res = f(list_5, 10);
       for (let e of res) {
-        expect(list_5).to.include(e)
+        expect(list_5).toContain(e)
       }
     }
   })

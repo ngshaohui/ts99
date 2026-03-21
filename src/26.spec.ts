@@ -1,6 +1,5 @@
 import { array_of_functions } from './26'
-import { expect } from 'chai'
-import 'mocha'
+import { describe, it, expect } from 'vitest'
 
 const list_1 = [4, 2, 5, 2, 4, 1, 8, 11, 2]
 // const list_2 = [4, 2, 5, 2, 4]
@@ -14,7 +13,7 @@ describe('combinations list_1', () => {
   it('should return 9 choose 3', () => {
     for (let f of array_of_functions) {
       const res = f(list_1, 3);
-      expect(res.length).to.equals(84)
+      expect(res.length).toBe(84)
     }
   })
 
@@ -25,7 +24,7 @@ describe('combinations list_5', () => {
   it('should return 13 choose 4', () => {
     for (let f of array_of_functions) {
       const res = f(list_5, 4);
-      expect(res.length).to.equals(715)
+      expect(res.length).toBe(715)
     }
   })
 

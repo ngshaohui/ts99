@@ -1,6 +1,5 @@
 import { array_of_functions } from './22'
-import { expect } from 'chai'
-import 'mocha'
+import { describe, it, expect } from 'vitest'
 
 // const list_1 = [4, 2, 5, 2, 4, 1, 8, 11, 2]
 // const list_2 = [4, 2, 5, 2, 4]
@@ -14,7 +13,7 @@ describe('range 4, 9', () => {
   it('should return [4, 5, 6, 7, 8, 9]', () => {
     for (let f of array_of_functions) {
       let res = f(4, 9);
-      expect(res).to.deep.equal([4, 5, 6, 7, 8, 9])
+      expect(res).toEqual([4, 5, 6, 7, 8, 9])
     }
   })
 
@@ -25,7 +24,7 @@ describe('range 1, 10', () => {
   it('should return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]', () => {
     for (let f of array_of_functions) {
       let res = f(1, 10);
-      expect(res).to.deep.equal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+      expect(res).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     }
   })
 
